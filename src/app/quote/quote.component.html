@@ -6,14 +6,17 @@
         <div class="col-md-6">
             <div *ngFor='let quote of quotes; let i = index'>
                 <div>
-                        <h4>{{quote.quote}}</h4>
-                        <button (click)='toggleDetails(i)'>Show Author</button>
+                    <h4>{{quote.quote}}</h4>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button>
                 </div>
-                <div>
 
-                </div *ngIf='quote.showAuthor'>
-                <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail>
+                <div *ngIf='quote.showAuthor'>
+                    <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail>
+                </div>
             </div>
+        </div>
+        <div class="col-md-6">
+            <app-goal-form></app-goal-form>
         </div>
     </div>
 </div>
