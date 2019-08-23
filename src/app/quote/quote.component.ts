@@ -10,8 +10,8 @@ export class QuoteComponent implements OnInit {
 
   title = 'Quotes';
   quotes: Quote[] = [
-    { id: 1, quote: 'Reading Is To The Mind, As Exercise Is To The Body.', author: 'Brian Tracy' },
-    { id: 2, quote: 'Today’s Accomplishments Were Yesterday’s Impossibilities.', author: 'Robert H. Schuller' },
+    new Quote(1, 'Reading Is To The Mind, As Exercise Is To The Body.', 'Brian Tracy'),
+    new Quote(2, 'Today’s Accomplishments Were Yesterday’s Impossibilities.', 'Robert H. Schuller'),
   ];
 
   constructor() { }
