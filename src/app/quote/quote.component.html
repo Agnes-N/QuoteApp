@@ -6,8 +6,11 @@
         <div class="col-md-6">
             <div *ngFor='let quote of quotes; let i = index'>
                 <div>
-                    <h4>{{quote.quote}}</h4>
-                    <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button>
+                    <ul>
+                        <li>{{quote.quote}}</li>
+                        <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button>
+                    </ul>
+
                 </div>
 
                 <div *ngIf='quote.showAuthor'>
