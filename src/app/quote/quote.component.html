@@ -12,7 +12,7 @@
             <div *ngFor='let quote of quotes; let i = index'>
                 <div>
                     <ul>
-                        <li>{{quote.quote}}</li>
+                        <li>{{quote.quote}} submitted on {{quote.ComplteDate|date|uppercase}}</li>
                         <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button>
                     </ul>
 

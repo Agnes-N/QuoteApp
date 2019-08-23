@@ -10,8 +10,8 @@ export class QuoteComponent implements OnInit {
 
   title = 'Quotes';
   quotes: Quote[] = [
-    new Quote(1, 'Reading Is To The Mind, As Exercise Is To The Body.', 'Brian Tracy'),
-    new Quote(2, 'Today’s Accomplishments Were Yesterday’s Impossibilities.', 'Robert H. Schuller'),
+    new Quote(1, 'Reading Is To The Mind, As Exercise Is To The Body.', 'Brian Tracy', 'Dona Ella', new Date(2019,10,14)),
+    new Quote(2, 'Today’s Accomplishments Were Yesterday’s Impossibilities.', 'Robert H. Schuller', 'Allen B', new Date(2019,10,14)),
   ];
 
   toggleDetails(index){
