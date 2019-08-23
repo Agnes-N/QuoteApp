@@ -1,6 +1,11 @@
 <!-- <p>quote-detail works!</p> -->
 <div class="card-body">
     <p>{{quote.author}}</p>
+
+    <p appStrikethrough *ngIf="highestUpvote()===quote.likeVote && quote.likeVote>0">{{quote.quote}}</p>
+    <p  *ngIf="highestUpvote()!==quote.likeVote || quote.likeVote===0">{{quote.quote}}</p>
+
+    <p>Last for {{quote.completeDate|dateCount}} days</p>
     <p class="card-text">upVotes: {{upVotes}}</p>
     <p class="card-text">downVotes: {{downVotes}}</p>
     <button class="btn btn-outline-success" (click)="likeVote()">UpVote</button>
