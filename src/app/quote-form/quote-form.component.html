@@ -1,8 +1,9 @@
 <!-- <p>quote-form works!</p>  -->
+<h2 class="text-center">Create a new Quote and Post it!</h2>
 <div class="container-fluid">
-    <h2 class="text-center">Create a new Quote and Post it!</h2>
+   
     <hr>
-    <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
             <label for="author">Author Name</label>
             <input type="text" class="form-control" id="author" [(ngModel)]="newObj.author" name="author" #author='ngModel'
