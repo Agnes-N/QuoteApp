@@ -14,6 +14,9 @@ export class QuoteComponent implements OnInit {
     new Quote(2, 'Today’s Accomplishments Were Yesterday’s Impossibilities.', 'Robert H. Schuller'),
   ];
 
+  toggleDetails(index){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
   constructor() { }
 
   ngOnInit() {
