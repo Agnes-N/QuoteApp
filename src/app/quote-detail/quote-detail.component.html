@@ -1,6 +1,6 @@
 <!-- <p>quote-detail works!</p> -->
 <!-- <div class="image"> -->
-  
+
 
 
 <div class="card-body">
@@ -8,7 +8,7 @@
 
     <p appStrikethrough *ngIf="highestUpvote()===quote.upVotes && quote.upVotes>0">{{quote.quote}}</p>
 
-    <p  *ngIf="highestUpvote()!==quote.upVotes || quote.upVotes===0">{{quote.quote}}</p>
+    <p *ngIf="highestUpvote()!==quote.upVotes || quote.upVotes===0">{{quote.quote}}</p>
 
     <p>Last for {{quote.completeDate|dateCount}} days</p>
 

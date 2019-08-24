@@ -17,9 +17,9 @@ export class QuoteDetailComponent implements OnInit {
 
   // votes
 
-  firstNumber:number
-  lastNumber:number
-  counter:number
+  firstNumber: number
+  lastNumber: number
+  counter: number
 
   upVotes: number;
   downVotes: number;
@@ -29,7 +29,7 @@ export class QuoteDetailComponent implements OnInit {
     this.downVotes = 0;
     this.firstNumber = 0;
     this.lastNumber = 0;
-    
+
   }
   likeVote() {
     this.upVotes += 1;
@@ -40,15 +40,15 @@ export class QuoteDetailComponent implements OnInit {
   }
 
 
-  highestUpvote(){
+  highestUpvote() {
     this.firstNumber = 0
     this.lastNumber = 0
 
-    for(this.counter=0 ; this.counter < this.quote.length; this.counter++) {
+    for (this.counter = 0; this.counter < this.quote.length; this.counter++) {
       this.lastNumber = this.quote[this.counter].upVotes;
-      if(this.lastNumber > this.firstNumber){this.firstNumber = this.lastNumber}
+      if (this.lastNumber > this.firstNumber) { this.firstNumber = this.lastNumber }
     }
-    return  this.firstNumber
+    return this.firstNumber
   }
   ngOnInit() {
   }

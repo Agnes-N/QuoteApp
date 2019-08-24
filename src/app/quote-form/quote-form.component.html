@@ -1,7 +1,7 @@
 <!-- <p>quote-form works!</p>  -->
 <h2 class="text-center">Create a new Quote</h2>
 <div class="container-fluid">
-   
+
     <hr>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
@@ -24,22 +24,22 @@
         </div>
 
         <div class="form-group">
-                <label for="person">Submitted by</label>
-                <input type="text" class="form-control" id="person" [(ngModel)]="newObj.person" name="person" #person='ngModel'
+            <label for="person">Submitted by</label>
+            <input type="text" class="form-control" id="person" [(ngModel)]="newObj.person" name="person" #person='ngModel'
                 required>
-                <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
-                    <p>Write person who Submitted the quote</p>
-                </div>
+            <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
+                <p>Write person who Submitted the quote</p>
             </div>
+        </div>
 
-            <div class="form-group">
-                    <label for="date">Submitted Date</label>
-                    <input type="date" class="form-control" id="date" [(ngModel)]="newObj.date" name="date" #date='ngModel'
-                    required>
-                    <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
-                        <p>Select submitted date</p>
-                    </div>
-                </div>
+        <div class="form-group">
+            <label for="date">Submitted Date</label>
+            <input type="date" class="form-control" id="date" [(ngModel)]="newObj.date" name="date" #date='ngModel'
+                required>
+            <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+                <p>Select submitted date</p>
+            </div>
+        </div>
 
         <button type="submit" class="btn btn-success" style="background-color: lightblue">Add Quote</button>
     </form>
