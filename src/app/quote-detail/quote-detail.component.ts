@@ -15,8 +15,6 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
-  // votes
-
   firstNumber: number
   lastNumber: number
   counter: number
@@ -38,7 +36,6 @@ export class QuoteDetailComponent implements OnInit {
   dislikeVote() {
     this.downVotes += 1;
   }
-
 
   highestUpvote() {
     this.firstNumber = 0
