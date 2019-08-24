@@ -2,11 +2,9 @@
     <p>{{quote.author}}</p>
 
     <p appStrikethrough *ngIf="highestUpvote()===quote.upVotes && quote.upVotes>0">{{quote.quote}}</p>
-
     <p *ngIf="highestUpvote()!==quote.upVotes || quote.upVotes===0">{{quote.quote}}</p>
 
     <p>Last for {{quote.completeDate|dateCount}} days</p>
-
     <p class="card-text">upVotes: {{upVotes}}</p>
     <p class="card-text">downVotes: {{downVotes}}</p>
 
