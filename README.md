@@ -1,27 +1,43 @@
-# Quotes
+# Quotes App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+Quotes is a web application that collects inforomation about different quotes from various individuals. 24 August 2019.
+
+## Author
+
+Agnes Nyiramisigaro
+
+## Description
+
+Quotes is a web application that collects inforomation about different quotes from various individuals.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Behavior Driven Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To be able to create a quote, you will have to fill the form and click on submit.
 
-## Build
+### Input
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Users enter author name, quote, his name as the publisher and the posted date.
 
-## Running unit tests
+### Output
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After click on submit he will be able to vote the quote and see the highest upvoted quote.
 
-## Running end-to-end tests
+## Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+It used HTML, CSS,TypeScript, Javascript, Bootstrap and Angular.
 
-## Further help
+## Support and contact details
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For any issues or questions, ideas or concern, please contact me on my e-mail: aggyreina@gmail.com.
+
+### License
+
+MIT license
+
+Copyright (c) 2019 Moringa School
+
+Created with all the love in the world, enjoy it is free of charge.
