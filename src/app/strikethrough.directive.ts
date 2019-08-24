@@ -5,8 +5,8 @@ import { Directive,ElementRef, HostListener } from '@angular/core';
 })
 export class StrikethroughDirective {
 
-  constructor(elem:ElementRef) {
-    elem.nativeElement.style.backgroundColor="lightblue"
+  constructor( private elem:ElementRef) {
+    this.elem.nativeElement.style.backgroundColor="lightblue"
    }
 
 }
