@@ -14,6 +14,11 @@ Quotes is a web application that collects inforomation about different quotes fr
 
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
+## Known Bugs
+
+* You can delete a quote even if you are not the publisher.
+* You can add an empty quote.
+
 ## Behavior Driven Development
 
 To be able to create a quote, you will have to fill the form and click on submit.
