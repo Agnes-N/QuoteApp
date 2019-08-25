@@ -1,6 +1,6 @@
 # Quotes App
 
-Quotes is a web application that collects inforomation about different quotes from various individuals. 24 August 2019.
+Quotes is a web application that collects information about different quotes from various individuals. 24 August 2019.
 
 ## Author
 
