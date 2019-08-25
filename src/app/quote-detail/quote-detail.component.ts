@@ -15,38 +15,7 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
-  firstNumber: number
-  lastNumber: number
-  counter: number
-
-  upVotes: number;
-  downVotes: number;
-
-  constructor() {
-    this.upVotes = 0;
-    this.downVotes = 0;
-    this.firstNumber = 0;
-    this.lastNumber = 0;
-
-  }
-  likeVote() {
-    this.upVotes += 1;
-  }
-
-  dislikeVote() {
-    this.downVotes += 1;
-  }
-
-  highestUpvote() {
-    this.firstNumber = 0
-    this.lastNumber = 0
-
-    for (this.counter = 0; this.counter < this.quote.length; this.counter++) {
-      this.lastNumber = this.quote[this.counter].upVotes;
-      if (this.lastNumber > this.firstNumber) { this.firstNumber = this.lastNumber }
-    }
-    return this.firstNumber
-  }
+  
   ngOnInit() {
   }
 

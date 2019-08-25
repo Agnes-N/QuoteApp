@@ -1,12 +1,12 @@
-import { Directive,ElementRef, HostListener } from '@angular/core';
+import { Directive,ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[appStrikethrough]'
 })
 export class StrikethroughDirective {
 
-  constructor( private elem:ElementRef) {
-    this.elem.nativeElement.style.backgroundColor="lightblue"
+  constructor(public elem:ElementRef) {
+    this.elem.nativeElement.style.backgroundColor="lightblue";
    }
 
 }
